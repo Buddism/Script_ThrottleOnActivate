@@ -29,10 +29,10 @@ if(!isObject(ScriptThrottleOnActivatePrefs))
 {
     registerPreferenceAddon("Script_ThrottleOnActivate", "Settings", "clock_add");
 
-    //general regen settings
-    WV_registerPref("Throttle Activate Options", "Enabled",             "bool", "$Pref::ThrottleActivate::Enabled",     "Script_ThrottleOnActivate", 0,   "");
-	WV_registerPref("Throttle Activate Options", "Player Delay (sec)",  "num",  "$Pref::ThrottleActivate::PlayerDelay", "Script_ThrottleOnActivate", 0.1, "0 100 0.01");
-	WV_registerPref("Throttle Activate Options", "Brick  Delay (sec)",  "num",  "$Pref::ThrottleActivate::BrickDelay",  "Script_ThrottleOnActivate", 0, "0 100 0.01");
+    //general settings
+    TOA_registerPref("Throttle Activate Options", "Enabled",             "bool", "$Pref::ThrottleActivate::Enabled",     "Script_ThrottleOnActivate", 0,   "");
+	TOA_registerPref("Throttle Activate Options", "Player Delay (sec)",  "num",  "$Pref::ThrottleActivate::PlayerDelay", "Script_ThrottleOnActivate", 0.1, "0 100 0.01");
+	TOA_registerPref("Throttle Activate Options", "Brick  Delay (sec)",  "num",  "$Pref::ThrottleActivate::BrickDelay",  "Script_ThrottleOnActivate", 0, "0 100 0.01");
 }
 
 
